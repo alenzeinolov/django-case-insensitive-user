@@ -1,6 +1,10 @@
 # django-case-insensitive-user
 Small app that extends default Django user to have case-insensitive username.
 
+## Requirements
+- Python 3.7 or later
+- Django 3.2 or later
+
 ## Installation
 1. Install `django-case-insensitive-user` using pip.
 ```bash
