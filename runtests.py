@@ -22,7 +22,7 @@ def setup_django():
             "django.contrib.contenttypes",
             "case_insensitive_user",
         ),
-        AUTH_USER_MODEL='case_insensitive_user.User',
+        AUTH_USER_MODEL="case_insensitive_user.User",
     )
     django.setup()
 
@@ -31,11 +31,11 @@ def main():
     setup_django()
 
     runner = DiscoverRunner(verbosity=1)
-    failures = runner.run_tests(['tests'])
+    failures = runner.run_tests(["tests"])
     if failures:
         sys.exit(failures)
     sys.exit(0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
