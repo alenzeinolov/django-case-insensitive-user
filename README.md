@@ -25,3 +25,12 @@ AUTH_USER_MODEL = "case_insensitive_user.User"
 ## Features
 - Works out of the box in Django admin panel
 - 100% test coverage
+
+## Configuration
+Configuration is done using `CASE_INSENSITIVE_USER` optional dictionary in your settings file:
+```python
+CASE_INSENSITIVE_USER = {
+    "VERBOSE_NAME": "Accounts",  # Display name to display in admin page for this app
+    "CASE_INSENSITIVE_EMAIL": True,  # Whether to make emails case insensitive too, False by default
+}
+```
